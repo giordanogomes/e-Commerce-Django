@@ -1,7 +1,9 @@
 from django.shortcuts import get_object_or_404
 from django.views.generic import DetailView, ListView
 
-#from cart.forms import CartAddProductForm
+from cart.forms import CartAddProductForm
+from django.shortcuts import get_object_or_404
+from django.views.generic import DetailView, ListView
 
 from .models import Category, Product
 
@@ -9,10 +11,10 @@ from .models import Category, Product
 # Detalhes do Produto
 class ProductDetailView(DetailView):
     queryset = Product.available.all()
-    #extra_context = {"form": CartAddProductForm()}
+    extra_context = {"form": CartAddProductForm()}
 
 
-# Lista dos Produtos
+# Lista de Produtos
 class ProductListView(ListView):
     category = None
     paginate_by = 6

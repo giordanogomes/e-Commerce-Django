@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
-
+# Configuração do app Pages
+# Deve ser colocado dentro de INSTALLED_APPS em settings.py
 class PagesConfig(AppConfig):
-    default_auto_field = 'django.db.models.BigAutoField'
     name = 'pages'

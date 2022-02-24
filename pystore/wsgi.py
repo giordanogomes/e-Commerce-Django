@@ -1,9 +1,9 @@
 """
-WSGI config for pystore project.
+Configuração WSGI para o projeto pystore.
 
-It exposes the WSGI callable as a module-level variable named ``application``.
+Ele expõe o WSGI callable como uma variável de nível de módulo chamada ``application``.
 
-For more information on this file, see
+Para obter mais informações sobre este arquivo, consulte
 https://docs.djangoproject.com/en/4.0/howto/deployment/wsgi/
 """
 
